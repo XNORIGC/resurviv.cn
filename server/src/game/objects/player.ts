@@ -853,6 +853,12 @@ export class Player extends BaseGameObject {
             );
         }
 
+        if (type === "fabricate") {
+            throwableList.forEach(item => {
+                this.inventory[item] += 1;
+            })
+        }
+
         this.recalculateScale();
     }
 
@@ -3529,7 +3535,11 @@ export class Player extends BaseGameObject {
                 this.inventory[dropMsg.item] -= amountToDrop;
 
                 if (this.inventory[dropMsg.item] == 0) {
-                    this.weaponManager.showNextThrowable();
+                    if (this.hasPerk("fabricate")) {
+                        this.inventory[dropMsg.item] += 1
+                    } else {
+                        this.weaponManager.showNextThrowable();
+                    }
                 }
                 this.inventoryDirty = true;
                 this.weapsDirty = true;

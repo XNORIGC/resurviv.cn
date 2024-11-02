@@ -193,6 +193,10 @@ export const GameConfig = {
                     type: "takedown",
                     droppable: false,
                 },
+                {
+                    type: "fabricate",
+                    droppable: false,
+                }
             ] as Array<{ type: string; droppable?: boolean }>,
             inventory: {
                 "9mm": 0,
