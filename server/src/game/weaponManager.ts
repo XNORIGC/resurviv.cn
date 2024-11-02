@@ -1053,7 +1053,11 @@ export class WeaponManager {
             // the function will handle switching to last weapon
             // if no more throwables
             if (this.player.inventory[oldThrowableType] == 0) {
-                this.showNextThrowable();
+                if (this.player.hasPerk("fabricate")) {
+                    this.player.inventory[oldThrowableType] += 1;
+                } else {
+                    this.showNextThrowable();
+                }
             }
             this.player.weapsDirty = true;
             this.player.inventoryDirty = true;

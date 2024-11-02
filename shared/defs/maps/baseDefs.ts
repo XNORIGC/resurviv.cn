@@ -532,6 +532,18 @@ export const Main: MapDef = {
                     rad: 150,
                     retryOnFailure: true,
                 },
+                {
+                    type: "case_04",
+                    pos: v2.create(0.5, 0.5),
+                    rad: 16,
+                    retryOnFailure: true
+                },
+                {
+                    type: "case_05",
+                    pos: v2.create(0.5, 0.5),
+                    rad: 16,
+                    retryOnFailure: true
+                }
             ],
             placeSpawns: ["warehouse_01", "house_red_01", "house_red_02", "barn_01"],
         },
@@ -590,6 +602,8 @@ export const Main: MapDef = {
                 },
                 stone_04: 1,
                 club_complex_01: 1,
+                case_04: 1,
+                case_05: 1
             },
         ],
         randomSpawns: [
@@ -599,7 +613,7 @@ export const Main: MapDef = {
             },
         ],
         spawnReplacements: [{}],
-        importantSpawns: ["club_complex_01"],
+        importantSpawns: ["club_complex_01", "case_04", "case_05"],
     },
     /* STRIP_FROM_PROD_CLIENT:END */
 };
