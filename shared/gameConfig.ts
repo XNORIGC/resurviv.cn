@@ -182,8 +182,8 @@ export const GameConfig = {
             chest: "",
             scope: "1xscope",
             perks: [
-                { type: "endless_ammo" },
-                { type: "fabricate" }
+                { type: "fabricate" },
+                { type: "endless_ammo" }
             ] as Array<{ type: string; droppable?: boolean }>,
             inventory: {
                 "9mm": 0,
