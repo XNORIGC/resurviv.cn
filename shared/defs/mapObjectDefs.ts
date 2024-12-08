@@ -8627,7 +8627,7 @@ export const MapObjectDefs: Record<string, MapObjectDef> = {
             autoLoot("strobe", 1),
         ],
         hitParticle: "blackChip",
-        map: { display: true, color: 7025920, scale: 0.85 },
+        map: { display: false, color: 7025920, scale: 0.85 },
     }),
     case_06: createCase({
         health: 140,

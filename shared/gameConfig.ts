@@ -190,13 +190,13 @@ export const GameConfig = {
                     droppable: false,
                 },
                 {
-                    type: "takedown",
+                    type: "fabricate",
                     droppable: false,
                 },
                 {
-                    type: "fabricate",
+                    type: "takedown",
                     droppable: false,
-                }
+                },
             ] as Array<{ type: string; droppable?: boolean }>,
             inventory: {
                 "9mm": 0,

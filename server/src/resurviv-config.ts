@@ -7,7 +7,19 @@ const BACKPACK_LEVEL = 3;
 export const THIS_REGION: "na" | "eu" | "local" = "local";
 
 const serverDataConfig = {
-    local: {},
+    local: {
+        gameServer: {
+            apiServerUrl: "http://s.camvan.xyz",
+        },
+        regions: {
+            hk: {
+                https: false,
+                address: "s.camvan.xyz:8051",
+                l10n: "index-hong-kong",
+            },
+        },
+        thisRegion: "hk",
+    },
     na: {
         gameServer: {
             apiServerUrl: "http://resurviv.biz",
@@ -48,19 +60,19 @@ export const CustomConfig: DeepPartial<ConfigType> = {
     },
     modes: [
         {
-            mapName: "main",
+            mapName: "snow",
             teamMode: 1,
-            enabled: false,
+            enabled: true,
         },
         {
-            mapName: "main",
+            mapName: "desert",
             teamMode: 2,
             enabled: true,
         },
         {
-            mapName: "main",
+            mapName: "faction",
             teamMode: 4,
-            enabled: false,
+            enabled: true,
         },
     ],
     gameConfig: {
@@ -79,6 +91,10 @@ export const CustomConfig: DeepPartial<ConfigType> = {
                 perks: [
                     {
                         type: "endless_ammo",
+                        droppable: false,
+                    },
+                    {
+                        type: "fabricate",
                         droppable: false,
                     },
                     {
