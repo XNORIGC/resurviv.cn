@@ -94,10 +94,6 @@ export const CustomConfig: DeepPartial<ConfigType> = {
                         droppable: false,
                     },
                     {
-                        type: "fabricate",
-                        droppable: false,
-                    },
-                    {
                         type: "takedown",
                         droppable: false,
                     },
