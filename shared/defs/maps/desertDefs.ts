@@ -236,6 +236,18 @@ const mapDef = {
                     rad: 50,
                     retryOnFailure: false,
                 },
+                {
+                    type: "case_04",
+                    pos: v2.create(0.5, 0.5),
+                    rad: 16,
+                    retryOnFailure: true
+                },
+                {
+                    type: "case_05",
+                    pos: v2.create(0.5, 0.5),
+                    rad: 16,
+                    retryOnFailure: true
+                },
             ],
             placeSpawns: ["desert_town_01", "desert_town_02"],
         },
@@ -282,6 +294,8 @@ const mapDef = {
                 river_town_02: 1,
                 greenhouse_02: 1,
                 stone_05: 6,
+                case_04: 1,
+                case_05: 1,
             },
         ],
         randomSpawns: [],
@@ -294,7 +308,7 @@ const mapDef = {
                 stone_03: "stone_03b",
             },
         ],
-        importantSpawns: ["desert_town_01", "desert_town_02", "river_town_02"],
+        importantSpawns: ["desert_town_01", "desert_town_02", "river_town_02", "case_04", "case_05"],
     },
     /* STRIP_FROM_PROD_CLIENT:END */
 };
