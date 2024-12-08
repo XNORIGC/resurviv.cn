@@ -543,7 +543,7 @@ export const Main: MapDef = {
                     pos: v2.create(0.5, 0.5),
                     rad: 16,
                     retryOnFailure: true
-                }
+                },
             ],
             placeSpawns: ["warehouse_01", "house_red_01", "house_red_02", "barn_01"],
         },
@@ -603,7 +603,7 @@ export const Main: MapDef = {
                 stone_04: 1,
                 club_complex_01: 1,
                 case_04: 1,
-                case_05: 1
+                case_05: 1,
             },
         ],
         randomSpawns: [

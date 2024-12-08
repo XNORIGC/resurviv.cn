@@ -378,7 +378,20 @@ const mapDef = {
             xlarge: "bridge_xlg_structure_01",
         },
         customSpawnRules: {
-            locationSpawns: [],
+            locationSpawns: [
+                {
+                    type: "case_04",
+                    pos: v2.create(0.5, 0.5),
+                    rad: 16,
+                    retryOnFailure: true
+                },
+                {
+                    type: "case_05",
+                    pos: v2.create(0.5, 0.5),
+                    rad: 16,
+                    retryOnFailure: true
+                },
+            ],
             placeSpawns: [],
         },
         densitySpawns: [
@@ -429,6 +442,8 @@ const mapDef = {
                 mil_crate_02: { odds: 1 },
                 tree_02: 3,
                 river_town_01: 1,
+                case_04: 1,
+                case_05: 1,
             },
         ],
         randomSpawns: [],
@@ -447,6 +462,8 @@ const mapDef = {
             "bank_01",
             "mansion_structure_01",
             "warehouse_complex_01",
+            "case_04",
+            "case_05",
         ],
     },
     /* STRIP_FROM_PROD_CLIENT:END */
