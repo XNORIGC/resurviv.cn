@@ -9,12 +9,12 @@ export const THIS_REGION: "na" | "eu" | "local" = "local";
 const serverDataConfig = {
     local: {
         gameServer: {
-            apiServerUrl: "http://s.camvan.xyz",
+            apiServerUrl: "http://r.camvan.xyz",
         },
         regions: {
             hk: {
                 https: false,
-                address: "s.camvan.xyz:8051",
+                address: "r.camvan.xyz:8201",
                 l10n: "index-hong-kong",
             },
         },

@@ -16,18 +16,18 @@ const isProduction = process.env["NODE_ENV"] === "production";
 export const Config = {
     devServer: {
         host: "127.0.0.1",
-        port: 8051,
+        port: 8201,
     },
 
     apiServer: {
         host: "0.0.0.0",
-        port: 8050,
+        port: 8200,
     },
 
     gameServer: {
         host: "0.0.0.0",
-        port: 8051,
-        apiServerUrl: "http://127.0.0.1:8050",
+        port: 8201,
+        apiServerUrl: "http://127.0.0.1:8200",
     },
 
     apiKey: "Kongregate Sucks",
