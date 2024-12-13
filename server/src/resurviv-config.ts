@@ -56,7 +56,7 @@ const serverDataConfig = {
 export const CustomConfig: DeepPartial<ConfigType> = {
     ...serverDataConfig[THIS_REGION],
     client: {
-        theme: "main",
+        theme: "snow",
     },
     modes: [
         {
@@ -100,6 +100,7 @@ export const CustomConfig: DeepPartial<ConfigType> = {
                 ],
 
                 inventory: {
+                    snowball: 10,
                     frag: 3,
                     smoke: 1,
                     mirv: 1,
